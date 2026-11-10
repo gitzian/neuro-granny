@@ -1,0 +1,1 @@
+Improved notification-launched recall: the app closes after a completed reminder review. Enabled screenshots and screen recordings. Additional test and maintenance improvements.

@@ -1,0 +1,16 @@
+Neuro Granny helps you remember passwords, PINs, bicycle lock combinations, door codes and other things you only need occasionally.
+
+Instead of looking up a code, practice recalling it when Neuro Granny reminds you. You can set fixed review intervals or use adaptive scheduling based on your recall performance.
+
+Features:
+* Persistent recall reminders
+* Generated geometric patterns or your own photos as visual cues
+* Fixed or adaptive review schedules
+* Review history and statistics
+* Local SQLite import and export
+* Recoverable secrets or salted Argon2id verify-only storage
+* Eight interface languages
+
+The app works offline. No accounts, cloud synchronization, analytics or internet permission are required.
+
+Privacy and recovery: Recoverable secrets are stored as readable text in the app's private SQLite database. Database exports are unencrypted and may include sensitive information. Verify-only secrets cannot be recovered. Keep a separate backup of important credentials; this app is a memory-training aid, not a replacement for a password manager.

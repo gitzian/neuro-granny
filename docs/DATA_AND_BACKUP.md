@@ -7,7 +7,7 @@ Neuro Granny stores its data in a private SQLite database on the device. Review 
 Database exports are useful for backups and transferring data to another device, including entries, review history and image cues.
 
 - Export uses Android's document picker to choose a destination.
-- The exported SQLite database preserves each entry's selected storage mode: Recoverable secrets remain readable, while Verify-only entries remain stored as Argon2id verifiers.
+- The exported SQLite database preserves each entry's selected storage mode: Recoverable entries allow secrets to be retrieved, while Verify-only entries retain their Argon2id verifiers.
 - A user-selected document provider may store a backup in the cloud. Neuro Granny does not upload it automatically.
 
 Keep exported databases in a location only you can access.

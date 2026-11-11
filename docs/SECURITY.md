@@ -6,16 +6,18 @@ Neuro Granny is an offline Android memory-training app, not a conventional passw
 
 Each entry uses one of two modes:
 
-- **Recoverable:** The secret is stored in readable form in the app's private database so it can be shown again when needed.
+- **Recoverable mode:** Stores secrets in retrievable form in Android's application-private database, allowing users to reveal them during learning and recall practice.
 - **Verify only:** The app stores an individually salted Argon2id verifier instead of the original secret. It can check an answer without keeping a recoverable copy.
 
 Conventional password managers typically encrypt credentials because they need to retrieve them. Neuro Granny's Verify-only mode does not need to recover the original secret. If a database copy becomes accessible to someone else, Recoverable entries can be read, while Verify-only entries require guessing against their verifiers. Argon2id makes guessing more expensive; short or predictable secrets remain easier to guess.
 
 ## Database backups and transfers
 
-Database exports are useful for backups and moving data to another device, including entries, review data and image cues. They preserve the selected storage mode: Recoverable entries contain readable secrets, while Verify-only entries contain Argon2id verifiers.
+Database exports let you back up your data or transfer it to another device, including entries, review history and image cues. Each entry retains its selected storage mode: Recoverable secrets remain retrievable, while Verify-only entries retain their Argon2id verifiers.
 
-Choose a backup location that other people cannot access. Android's document picker may offer local or cloud-backed locations, but Neuro Granny does not upload backups automatically. Android-managed app backups and device transfers are disabled.
+You choose where to save backups using Android's document picker, which supports local and cloud storage providers. Neuro Granny does not upload or synchronize data automatically.
+
+Keep your backups in a location only you can access. Android-managed app backups and device transfers are disabled.
 
 ## Device security and data handling
 

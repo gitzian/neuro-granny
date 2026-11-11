@@ -60,7 +60,7 @@ You can install Neuro Granny in three ways.
 
 ### F-Droid
 
-F-Droid availability is planned.
+F-Droid availability is planned. This repo is still too young (less than 3 months) to comply with F-Droid.
 
 ### GitHub Releases
 
@@ -91,16 +91,16 @@ Debug APKs are intended for testing. Official release APKs are signed separately
 
 ## Password storage and privacy
 
-Neuro Granny is intentionally not a conventional password manager. Its purpose is to help you remember secrets, not to replace your existing storage or backup system.
+Neuro Granny is intentionally not a conventional password manager. Its purpose is to help you learn and remember secrets through regular recall practice, not to replace your existing storage or backup system.
 
 Each entry supports two storage modes:
 
-- **Recoverable:** The secret is stored as readable text in the application's private SQLite database. You can reveal it again when needed.
+- **Recoverable:** Stores secrets in Android's application-private database, protected by the operating system's standard app isolation and device security. Secrets remain retrievable by Neuro Granny during learning and recall practice.
 - **Verify only:** The secret is represented by a salted Argon2id hash. Neuro Granny can check whether your answer is correct, but cannot reconstruct the original secret.
 
 ### How secure is this?
 
-A hash is essentially a one-way fingerprint of your secret. Instead of storing the actual password, Neuro Granny stores a value calculated from it. When you enter your secret, the app calculates and checks the hash again. There's no direct way to reverse that hash back into the original password.
+A hash is essentially a one-way fingerprint of your secret. In Verify-only mode, Neuro Granny stores a value calculated from your secret rather than the original secret. When you enter your secret, the app calculates and checks the hash again. There's no direct way to reverse that hash back into the original password.
 
 Argon2id is designed to make password guessing expensive, but short PINs and weak passwords remain vulnerable to guessing if someone obtains the stored hashes.
 

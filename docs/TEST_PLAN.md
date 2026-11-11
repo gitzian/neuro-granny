@@ -10,8 +10,6 @@ bash tests/run_core_selftest.sh
 bash tests/verify_source.sh
 ```
 
-The checks cover selected review rules, secret verification, source contracts, translation resources and Java code. Passing these tests does **not** establish device compatibility or security certification.
-
 ## Device tests
 
 Before release, verify at least the following on Android 6 (API 23) and a current Android version:

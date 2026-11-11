@@ -102,13 +102,11 @@ Each entry supports two storage modes:
 
 A hash is essentially a one-way fingerprint of your secret. Instead of storing the actual password, Neuro Granny stores a value calculated from it. When you enter your secret, the app calculates and checks the hash again. There's no direct way to reverse that hash back into the original password.
 
-However, **hashing doesn't make a password unbreakable**. If someone manages to obtain your database, they can try guessing passwords and comparing their hashes. This is called a brute-force or dictionary attack. Argon2id is designed to make such guessing expensive, but weak passwords and short PINs can still be cracked.
+Argon2id is designed to make password guessing expensive, but short PINs and weak passwords remain vulnerable to guessing if someone obtains the stored hashes.
 
-Secrets stored in Recoverable mode are even more exposed: anyone who obtains and reads the database can see them directly, without guessing. So ultimately, your security depends on **how well you protect your device, how strong your secrets are, and how carefully you handle backups**. There is no magic protection against a compromised device or a weak password.
+So ultimately, your security depends on **how well you protect your device, how strong your secrets are, and how carefully you handle backups**.
 
-All data stays on your device. There is no online synchronization, telemetry or recovery service. The database relies on Android's application-private storage and device storage protection; Neuro Granny does not independently encrypt its database.
-
-**Important:** Database exports are unencrypted SQLite files and may contain readable passwords and other secrets. Store them securely.
+Neuro Granny stores data locally and does not automatically synchronize or upload it.
 
 ## Keep your own backups
 
@@ -118,7 +116,7 @@ Memory training is useful, but memory is not infallible. Neuro Granny should nev
 
 ## Bugs, feedback and feature requests
 
-Feel free to [report bugs or suggest features](https://github.com/gitzian/neuro-granny/issues) on GitHub. I've been using Neuro Granny myself for years, but I haven't done extensive testing across different devices and Android versions, so there's certainly a chance I've missed something. If something doesn't work as expected, let me know. And if you have an idea that fits the app's simple purpose, I'm happy to hear it.
+Feel free to [report bugs or suggest features](https://github.com/gitzian/neuro-granny/issues) on GitHub. I've been using Neuro Granny myself for years, but testing across different Android devices is always useful. If something doesn't work as expected, let me know. And if you have an idea that fits the app's simple purpose, I'm happy to hear it.
 
 ## Support the project
 

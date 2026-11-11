@@ -16,11 +16,10 @@ Use a fresh public source checkout for the release build. The application versio
 - [ ] Test database export and import, including conflicts and cancellation.
 - [ ] Test reminders after reboot and under notification restrictions.
 - [ ] Test keyboard, rotation and large-font layouts on API 23 and a recent Android version.
-- [ ] Verify that no secrets appear in logs, screenshots or unintended exports.
+- [ ] Verify that no private credentials or test secrets are accidentally included in logs or published release assets.
 
 ## Publication
 
 - [ ] Tag the exact reviewed source commit using `vX.Y.Z`.
 - [ ] Publish source, license, changelog and release notes.
 - [ ] If distributing an APK, attach its SHA-256 checksum and identify the signing source.
-- [ ] Keep F-Droid submissions and signing independent from GitHub APK releases.

@@ -1,7 +1,7 @@
 
 <h1>
-  <img src="docs/assets/neuro-granny-android-logo-transparent.png"
-       width="44"
+  <img src="docs/assets/neuro-granny-android-logo-rounded.png"
+       width="55"
        alt="Neuro Granny logo"
        align="absmiddle">
   Neuro Granny

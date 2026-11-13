@@ -33,8 +33,6 @@ It started with bicycle lock combinations, door access codes, locker room PINs a
 
 Eventually, I started using it for passwords and other secrets that I encounter at irregular intervals but still want to keep in my head. Of course, there are plenty of password managers out there. I use offline password managers on my PC myself, mostly for convenience, but with my setup those passwords aren't automatically available across devices. Cloud-based password managers aren't something I want to use; I'd rather keep my secrets under my own control and, wherever possible, actually remember them.
 
-And let's face it: with cached credentials, automatic logins and biometric authentication, we barely need to type our passwords anymore. Convenient, absolutely. Great for remembering them? Not so much. Neuro Granny is my way of doing something about that.
-
 I've been using an earlier version for over three years. It started as a personal utility, and I never really planned to publish it. But applying a bit of reverse swarm intelligence, I figure there must be at least one or two other people out there who think similarly. So here it is. I hope you find it as useful as I do.
 
 ## Features
